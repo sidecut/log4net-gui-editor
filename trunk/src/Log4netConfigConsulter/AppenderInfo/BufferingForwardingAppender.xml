@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AppenderInfo>
+	<AppenderDesc>This appender will buffer 100 messages before delivering them to the specified appender.</AppenderDesc>
+	<Arguments>
+		<Argument Name="BufferSize" DataType="int" Value="100" Description="Buffer how many messages before delivering them to the indicated appender" UIType="SingleLineTextBox" IsTagName="true"/>
+		<Argument Name="appender-ref" DataType="string" Value="DemoAppender" Description="Indicated appender's name" UIType="SingleLineTextBox" IsTagName="true" ValueAttriName="ref"/>
+		<Argument Name="evaluator" DataType="string" Value="log4net.spi.LevelEvaluator" EnumValues="log4net.spi.LevelEvaluator" Description="If a LevelEvaluator is specified with a threshold. This means that the events will only be delivered when a message with level of threshold or higher level is logged." UIType="DropDownList" IsTagName="true" ValueAttriName="type">
+			<Argument Name="Threshold" DataType="string" Value="WARN" EnumValues="FATAL;ERROR;WARN;INFO;DEBUG;ALL" Description="If a LevelEvaluator is specified with a threshold. This means that the events will only be delivered when a message with level of threshold or higher level is logged." UIType="DropDownList"/>
+		</Argument>
+	</Arguments>
+</AppenderInfo>

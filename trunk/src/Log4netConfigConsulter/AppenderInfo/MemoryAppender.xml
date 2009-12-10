@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AppenderInfo>
+	<AppenderDesc>It is unlikely that the MemoryAppender will be configured using a config file, but if you want to do it here's how.</AppenderDesc>
+	<Arguments>
+		<Argument Name="OnlyFixPartialEventData" DataType="bool" Value="true" EnumValues="true;false" Description="Only Fix Partial Event Data." UIType="DropDownList"/>
+	</Arguments>
+</AppenderInfo>

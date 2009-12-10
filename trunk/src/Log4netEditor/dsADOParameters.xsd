@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dsADOParameters" targetNamespace="http://tempuri.org/dsADOParameters.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/dsADOParameters.xsd" xmlns:mstns="http://tempuri.org/dsADOParameters.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+	<xs:element name="dsADOParameters" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Parameters">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="parameterName" type="xs:string" minOccurs="0" />
+							<xs:element name="dbType" type="xs:string" minOccurs="0" />
+							<xs:element name="layout" type="xs:string" minOccurs="0" />
+							<xs:element name="conversionPattern" type="xs:string" minOccurs="0" msprop:nullValue="_null" />
+							<xs:element name="size" type="xs:int" minOccurs="0" default="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AppenderInfo>
+	<AppenderDesc>This appender will log messages to the System.Diagnostics.Trace system.\r\nThese messages will be logged to any System.Diagnostics.TraceListener that is registered in the config file.</AppenderDesc>
+	<Arguments/>
+</AppenderInfo>

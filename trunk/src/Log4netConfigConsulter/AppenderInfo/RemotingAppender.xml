@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AppenderInfo>
+	<AppenderDesc>This appender deliver logging events to a specified Sink (in this example the sink is tcp://localhost:8085/LoggingSink).\r\nIn this example the events are delivered in blocks of 95 events because of the BufferSize.\r\nNo events are discarded.\r\nThe OnlyFixPartialEventData option allows the appender to ignore certain logging event properties that can be very slow to generate (e.g. the calling location information).</AppenderDesc>
+	<Arguments>
+		<Argument Name="Sink" DataType="string" Value="tcp://localhost:8085/LoggingSink" EnumValues="" Description="The full URL to remoting server to deliver log information." UIType="SingleLineTextBox"/>
+		<Argument Name="Lossy" DataType="bool" Value="true" EnumValues="true;false" Description="Lossy" UIType="DropDownList"/>
+		<Argument Name="BufferSize" DataType="int" Value="95" EnumValues="" Description="Buffer Size." UIType="SingleLineTextBox"/>
+		<Argument Name="OnlyFixPartialEventData" DataType="bool" Value="true" EnumValues="true;false" Description="Only Fix Partial Event Data." UIType="DropDownList"/>
+	</Arguments>
+</AppenderInfo>

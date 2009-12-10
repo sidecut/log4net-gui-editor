@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AppenderInfo>
+	<AppenderDesc>This appender will deliver log events via SMTP email. The To, From, Subject and SMTPHost are required parameters.</AppenderDesc>
+	<Arguments>
+		<Argument Name="To" DataType="string" Value="bluestar@cedar.com.tw" EnumValues="" Description="Email address for receiver." UIType="SingleLineTextBox"/>
+		<Argument Name="From" DataType="string" Value="billchen@cedar.com.tw" EnumValues="" Description="Email address for sender." UIType="SingleLineTextBox"/>
+		<Argument Name="Subject" DataType="string" Value="System alert mail" EnumValues="" Description="Email subject or title." UIType="SingleLineTextBox"/>
+		<Argument Name="SMTPHost" DataType="string" Value="msa.hinet.net" EnumValues="" Description="Email SMTP Server's IP or URL." UIType="SingleLineTextBox"/>
+		<Argument Name="LocationInfo" DataType="bool" Value="false" EnumValues="true;false" Description="Location Info." UIType="DropDownList"/>
+		<Argument Name="BufferSize" DataType="int" Value="512" EnumValues="" Description="Buffer Size." UIType="SingleLineTextBox"/>
+		<Argument Name="Lossy" DataType="bool" Value="false" EnumValues="true;false" Description="Lossy." UIType="DropDownList"/>
+		<Argument Name="evaluator" DataType="string" Value="log4net.Core.LevelEvaluator" EnumValues="log4net.Core.LevelEvaluator" Description="If a LevelEvaluator is specified with a threshold. This means that the events will only be delivered when a message with level of threshold or higher level is logged." UIType="DropDownList" IsTagName="true" ValueAttriName="type">
+			<Argument Name="Threshold" DataType="string" Value="WARN" EnumValues="FATAL;ERROR;WARN;INFO;DEBUG;ALL" Description="Specify a threshold level." UIType="DropDownList"/>
+		</Argument>
+	</Arguments>
+</AppenderInfo>
