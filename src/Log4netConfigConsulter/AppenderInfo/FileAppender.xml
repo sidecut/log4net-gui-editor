@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AppenderInfo>
+	<AppenderDesc>This appender will write messages to a file. The file will be appended to rather than overwritten each time the logging process starts.</AppenderDesc>
+	<Arguments>
+		<Argument Name="File" DataType="string" Value="log-file.txt" Description="The full path of plain-text file which you want to store log information." UIType="SingleLineTextBox"/>
+		<Argument Name="AppendToFile" DataType="string" Value="true" EnumValues="true;false" Description="Append or overwrite if the log file was existed." UIType="DropDownList"/>
+	</Arguments>
+</AppenderInfo>

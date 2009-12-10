@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AppenderInfo>
+	<AppenderDesc>This appender will log messages to the console with colorful visualization.</AppenderDesc>
+	<Arguments>
+		<Argument Name="mapping" DataType="string" Value="" Description="" UIType="None" IsTagName="true">
+			<Argument Name="level" DataType="string" Value="ERROR" EnumValues="FATAL;ERROR;WARN;INFO;DEBUG;ALL" Description="Which level you want to map to the following color?" UIType="DropDownList" IsTagName="true" ValueAttriName="value"/>
+			<Argument Name="forecolor" DataType="string" Value="White" EnumValues="" Description="Pick a color you want to map to the above level." UIType="SingleLineTextBox" IsTagName="true" ValueAttriName="value"/>
+			<Argument Name="backcolor" DataType="string" Value="Red, HighIntensity" EnumValues="" Description="Pick a color you want to map to the above level for its background." UIType="SingleLineTextBox" IsTagName="true" ValueAttriName="value"/>
+		</Argument>
+	</Arguments>
+</AppenderInfo>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AppenderInfo>
+	<AppenderDesc>This Appender log messages to DB depend on the provider selected for the target database.
+(MS SQL Server / MS Access / Oracle 9i)</AppenderDesc>
+	<Arguments>
+    <Argument Name="bufferSize" DataType="string" Value="10" Description="Indicate how many log in memory buffer before flush to database." UIType="SingleLineTextBox" />
+		<Argument Name="ConnectionType" DataType="string" Value="System.Data.SqlClient.SqlConnection, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+			Description="Assign DB Connection Type" UIType="SingleLineTextBox" />
+		<Argument Name="ConnectionString" DataType="string" Value="data source=(local);initial catalog=CedarLog;integrated security=true;persist security info=True"
+			Description="Assign DB Connection string" UIType="SingleLineTextBox" />
+		<Argument Name="CommandText" DataType="string" Value="INSERT INTO Log4net ([Date],[Thread],[Level],[Logger],[Message]) VALUES (@log_date, @thread, @log_level, @logger, @message)"
+			Description="Assign DB SQL statement to write log" UIType="MultiLineTextBox" />
+		<Argument Name="Parameter" DataType="Collection" Value="" Description="Design parameters"
+			UIType="ParameterGrid">
+			<parameter>
+				<parameterName value="@log_date" />
+				<dbType value="DateTime" />
+				<layout type="log4net.Layout.RawTimeStampLayout" />
+			</parameter>
+			<parameter>
+				<parameterName value="@thread" />
+				<dbType value="String" />
+				<size value="255" />
+				<layout type="log4net.Layout.PatternLayout">
+					<conversionPattern value="%thread" />
+				</layout>
+			</parameter>
+			<parameter>
+				<parameterName value="@log_level" />
+				<dbType value="String" />
+				<size value="50" />
+				<layout type="log4net.Layout.PatternLayout">
+					<conversionPattern value="%level" />
+				</layout>
+			</parameter>
+			<parameter>
+				<parameterName value="@logger" />
+				<dbType value="String" />
+				<size value="255" />
+				<layout type="log4net.Layout.PatternLayout">
+					<conversionPattern value="%logger" />
+				</layout>
+			</parameter>
+			<parameter>
+				<parameterName value="@message" />
+				<dbType value="String" />
+				<size value="4000" />
+				<layout type="log4net.Layout.PatternLayout">
+					<conversionPattern value="%message" />
+				</layout>
+			</parameter>
+			<parameter>
+				<parameterName value="@exception" />
+				<dbType value="String" />
+				<size value="2000" />
+				<layout type="log4net.Layout.ExceptionLayout" />
+			</parameter>
+		</Argument>
+	</Arguments>
+</AppenderInfo>

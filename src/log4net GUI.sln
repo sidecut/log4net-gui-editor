@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Log4netEditor", "Log4netEditor\Log4netEditor.csproj", "{40385753-7EBF-4917-B4E1-B00C30B84134}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Log4netConfigConsulter", "Log4netConfigConsulter\Log4netConfigConsulter.csproj", "{014F0576-56C1-4F03-B993-85AA470EB5B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log4net GUI", "log4net GUI\log4net GUI.csproj", "{14E42958-5473-4B90-B94A-C3FDE6CBE363}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40385753-7EBF-4917-B4E1-B00C30B84134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40385753-7EBF-4917-B4E1-B00C30B84134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40385753-7EBF-4917-B4E1-B00C30B84134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40385753-7EBF-4917-B4E1-B00C30B84134}.Release|Any CPU.Build.0 = Release|Any CPU
+		{014F0576-56C1-4F03-B993-85AA470EB5B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{014F0576-56C1-4F03-B993-85AA470EB5B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{014F0576-56C1-4F03-B993-85AA470EB5B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{014F0576-56C1-4F03-B993-85AA470EB5B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14E42958-5473-4B90-B94A-C3FDE6CBE363}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14E42958-5473-4B90-B94A-C3FDE6CBE363}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14E42958-5473-4B90-B94A-C3FDE6CBE363}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14E42958-5473-4B90-B94A-C3FDE6CBE363}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

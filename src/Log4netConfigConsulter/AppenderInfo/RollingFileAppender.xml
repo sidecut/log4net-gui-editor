@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AppenderInfo>
+	<AppenderDesc>This Appender will write log information into physical files.</AppenderDesc>
+	<Arguments>
+		<Argument Name="file" DataType="string" Value=".\logs\ws.log" EnumValues="" Description="The full path of plain-text file which you want to store log information." UIType="SingleLineTextBox" IsTagName="true" ValueAttriName="value"/>
+		<Argument Name="appendToFile" DataType="bool" Value="true" EnumValues="true;false" Description="Append or overwrite if the log file was existed." UIType="DropDownList" IsTagName="true" ValueAttriName="value"/>
+		<Argument Name="rollingStyle" DataType="string" Value="Size" EnumValues="Size;Date;Composite" Description="Assign the condition which make file rolling." UIType="DropDownList" IsTagName="true" ValueAttriName="value"/>
+		<Argument Name="lockingModel" DataType="string" Value="log4net.Appender.FileAppender+MinimalLock" EnumValues="" Description="Indicate the lock mode of this log file." UIType="SingleLineTextBox" IsTagName="true" ValueAttriName="type"/>
+		<Argument Name="maxSizeRollBackups" DataType="int" Value="2" EnumValues="" Description="Indicate to keep how many log files." UIType="SingleLineTextBox" IsTagName="true" ValueAttriName="value"/>
+		<Argument Name="staticLogFileName" DataType="bool" Value="true" EnumValues="true;false" Description="True if always should be logged to the same file, otherwise false." UIType="DropDownList" IsTagName="true" ValueAttriName="value"/>
+		<Argument Name="maximumFileSize" DataType="string" Value="128KB" EnumValues="" Description="The maximum size that the output file is allowed to reach before being rolled over to backup files." UIType="SingleLineTextBox" IsTagName="true" ValueAttriName="value"/>
+	</Arguments>
+</AppenderInfo>

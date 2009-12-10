@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AppenderInfo>
+	<AppenderDesc>This appender will deliver messages to a specific user's screen.\r\nAs this appender is typically only used for important notifications a Threshold of level is specified.\r\nHowever things are not always straight forward using the Windows Messenger Service, one possible outcome using this configuration is that the Server will broadcast looking for a WINS server which it will then ask to deliver the message to the Recipient, the WINS server will deliver it to the first terminal that the user logged in from.</AppenderDesc>
+	<Arguments>
+		<Argument Name="Threshold" DataType="string" Value="ERROR" EnumValues="FATAL;ERROR;WARN;INFO;DEBUG;ALL" Description="Which above level of information you want to log." UIType="DropDownList"/>
+		<Argument Name="Server" DataType="string" Value="CEDAR" EnumValues="" Description="Machine name." UIType="SingleLineTextBox"/>
+		<Argument Name="Recipient" DataType="string" Value="BlueStar" EnumValues="" Description="User nicko on the machine." UIType="SingleLineTextBox"/>
+	</Arguments>
+</AppenderInfo>

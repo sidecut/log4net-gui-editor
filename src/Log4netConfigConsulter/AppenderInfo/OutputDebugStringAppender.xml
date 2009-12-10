@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AppenderInfo>
+	<AppenderDesc>This appender will write logging messages to the OutputDebugString API.</AppenderDesc>
+	<Arguments/>
+</AppenderInfo>

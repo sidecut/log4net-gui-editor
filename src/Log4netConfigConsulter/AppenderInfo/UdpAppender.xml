@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AppenderInfo>
+	<AppenderDesc>This appender will send events to a RemoteAddress on the specified RemotePort.</AppenderDesc>
+	<Arguments>
+		<Argument Name="LocalPort" DataType="int" Value="8080" Description="The specified port number for local to send log message." UIType="SingleLineTextBox"/>
+		<Argument Name="RemoteAddress" DataType="string" Value="127.0.0.1" Description="The specified IP address to receive log message." UIType="SingleLineTextBox"/>
+		<Argument Name="RemotePort" DataType="int" Value="8080" Description="The specified port number for remote to receive log message." UIType="SingleLineTextBox"/>
+	</Arguments>
+</AppenderInfo>

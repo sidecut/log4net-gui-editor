@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AppenderInfo>
+	<AppenderDesc>This appender will log to the Application event log on the local machine using the event Source of the AppDomain.FriendlyName.</AppenderDesc>
+	<Arguments>
+		<Argument Name="ApplicationName" DataType="string" Value="MyApp" Description="A specific event Source" UIType="SingleLineTextBox"/>
+	</Arguments>
+</AppenderInfo>
